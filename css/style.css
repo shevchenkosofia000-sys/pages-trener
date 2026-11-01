@@ -1,0 +1,166 @@
+/* style.css — оформлення сайту «Юридична клініка для студентів» (ПР18) */
+:root {
+  --bg: #ffffff;
+  --surface: #f2f5fc;
+  --text: #1b1d24;
+  --muted: #545869;
+  --line: #d7dae3;
+  --accent: #1636b0;
+  --green: #0b7a63;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--accent);
+}
+
+.container {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 2rem;
+  padding: 0.75rem 1rem;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu a:hover,
+.menu a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+.hero {
+  background: var(--surface);
+}
+
+.hero-inner {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+.hero-date {
+  margin: 0;
+  font-weight: 600;
+  color: var(--green);
+}
+
+h1 {
+  margin: 0.5rem 0 1rem;
+  font-size: clamp(1.75rem, 1rem + 3vw, 3rem);
+  line-height: 1.2;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.4rem;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #102a8c;
+}
+
+.section {
+  padding: 3rem 1rem;
+}
+
+.cards {
+  display: grid;
+  gap: 1.25rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.contacts-list {
+  padding-left: 1.25rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.site-footer p {
+  margin: 0;
+  padding: 1.5rem 1rem;
+}
+
+@media (min-width: 48rem) {
+  .hero-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
