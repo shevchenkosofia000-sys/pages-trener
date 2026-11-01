@@ -2,4 +2,4 @@
 
 Навчальний сайт (практична робота №18, «Вебдизайн»).
 
-Сайт: https://ваш-логін.github.io/pages-trener/
+Сайт: https://shevchenkosofia000-sys.github.io/pages-trener/
